@@ -1,0 +1,13 @@
+n=int(input())
+isNegative=False
+if(n<0):
+    isNegative=True
+    n=abs(n)
+ans=""
+while(n>0):
+    ans=ans+str(n%3)
+    n=n//3
+ans=ans[::-1]
+if(isNegative):
+    ans="-"+ans
+print(ans)    
